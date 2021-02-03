@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.orderdetail.OrderDetailActivity"
+    android:paddingTop="?actionBarSize"
+    tools:showIn="@layout/activity_order_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        >
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+            <TableRow>
+                <TextView
+                    android:text="Trạng  đơn hàng:"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColor3"
+                    android:padding="3dip" />
+                <TextView android:id="@+id/orderStatusTv"
+                    android:gravity="left"
+                    android:text="123"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Mã đơn hàng:"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColor3"
+                    android:padding="3dip" />
+                <TextView android:id="@+id/orderIdTv"
+                    android:gravity="left"
+                    android:text="123"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Tên đơn hàng:"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColor3"
+                    android:padding="3dip" />
+                <TextView android:id="@+id/qrNameTv"
+                    android:gravity="left"
+                    android:text="123"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Tên cửa hàng:"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColor3"
+                    android:padding="3dip" />
+                <TextView android:id="@+id/locationNameTv"
+                    android:gravity="left"
+                    android:text="123"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Địa chỉ:"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColor3"
+                    android:padding="3dip" />
+                <TextView android:id="@+id/locationAddTv"
+                    android:gravity="left"
+                    android:text="123"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Số tiền:"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColor3"
+                    android:padding="3dip" />
+                <TextView android:id="@+id/priceTv"
+                    android:gravity="left"
+                    android:text="123"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Thời gian :"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColor3"
+                    android:padding="3dip" />
+                <TextView android:id="@+id/timeTv"
+                    android:gravity="left"
+                    android:text="123"
+                    android:padding="3dip" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Ghi chú :"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColor3"
+                    android:padding="3dip" />
+                <TextView android:id="@+id/noteTv"
+                    android:gravity="left"
+                    android:maxLines="5"
+                    android:ellipsize="end"
+                    android:text="@string/large_text"
+                    android:padding="3dip" />
+            </TableRow>
+        </TableLayout>
+        <WebView android:id="@+id/webView"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
